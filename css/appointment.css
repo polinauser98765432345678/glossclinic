@@ -1,0 +1,130 @@
+/* appointment.css */
+.appointment-main {
+    padding: 80px 0;
+    background-color: #f9f5f3;
+    min-height: calc(100vh - 200px);
+}
+
+.appointment-main .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(158, 117, 117, 0.1);
+    border: 1px solid #d4b5aad4;
+    position: relative;
+    top: 50px;
+}
+
+.appointment-main h1 {
+    color: #9e7575;
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.appointment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #7a5d5d;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d4b5aad4;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #9e7575;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(158, 117, 117, 0.2);
+}
+
+.form-notice {
+    grid-column: 1 / -1;
+    background-color: #f8f1ee;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+    color: #7a5d5d;
+    margin: 10px 0;
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    background-color: #9e7575;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-style: italic;
+}
+
+.submit-btn:hover {
+    background-color: #7a5d5d;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .appointment-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .appointment-main .container {
+        padding: 30px;
+        top: 30px;
+    }
+    
+    .appointment-main h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment-main .container {
+        padding: 20px;
+        top: 20px;
+    }
+    
+    .appointment-main h1 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 12px;
+    }
+}

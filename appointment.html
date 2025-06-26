@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на прием - GlossClinic</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="GlossClinic">
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="about.html">О клинике</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-actions">
+                <a href="appointment.html" class="btn-appointment">
+                    <img src="images/appointment-icon.png" alt="Запись">
+                </a>
+                <a href="login.php" class="btn-profile">
+                 <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="appointment-main">
+        <div class="container">
+            <h1>Запись к специалисту</h1>
+            
+            <form id="appointment-form" class="appointment-form">
+                <div class="form-group">
+                    <label for="name">ФИО *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Услуга</label>
+                    <select id="service" name="service">
+                        <option value="">-- Выберите услугу --</option>
+                        <!-- Опции будут заполнены через JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="doctor">Специалист</label>
+                    <select id="doctor" name="doctor">
+                        <option value="">-- Выберите специалиста --</option>
+                        <!-- Опции будут заполнены через JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Дата приема</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Время приема</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                
+                <div class="form-notice">
+                    <p>Запись через сайт является предварительной. Наш сотрудник свяжется с Вами для подтверждения записи к специалисту.</p>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="images/logo-footer.png" alt="GlossClinic">
+                <div class="footer-copyright">© 2025, GlossClinic made by me</div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-phone">8 888 888 88 88</div>
+                <div class="footer-email">GLOSSCLINIC@GMAIL.COM</div>
+                <div class="footer-hours">График: Пн - Вс с 10:00 до 22:00</div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/appointment.js"></script>
+</body>
+</html>

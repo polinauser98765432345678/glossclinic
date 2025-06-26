@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlossClinic - Эстетическая клиника</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div class="header-content"> <!-- Новый контейнер для лого+навигации -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="GlossClinic">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">О клинике</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="header-actions">
+            <a href="appointment.php" class="btn-appointment">
+                <img src="images/appointment-icon.png" alt="Запись">
+            </a>
+            <a href="login.php" class="btn-profile">
+                 <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <main>
+<!-- Hero Section with Background Logo -->
+<section class="hero-section">
+    <div class="pattern-layer" style="background-image: url('images/logo-bg.png');"></div>
+    <div class="hero-content">
+        <h1>Own Your Beauty</h1>
+        <p>Эксперты в эстетике и косметологии</p>
+        <a href="#mission" class="btn-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+    <!-- Mission Section -->
+<div class="mission-container">
+    <div class="mission-frame">
+        <p>В Gloss Clinic каждый клиент — это уникальная история, требующая только понимания и профессионализма. Наши специалисты работают с использованием только сертифицированных препаратов и оборудования, обеспечивая безопасность и максимальную эффективность процедур.</p>
+    </div>
+</div>
+
+<!-- HTML с исправленной структурой -->
+<section class="promotions-section">
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="images/promo1.jpg" alt="Акция 1">
+                    <div class="carousel-caption">
+                        <h3>Скидка 20% на первый визит</h3>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/promo2.jpg" alt="Акция 2">
+                    <div class="carousel-caption">
+                        <h3>Комплексное омоложение</h3>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/promo3.jpg" alt="Акция 3">
+                    <div class="carousel-caption">
+                        <h3>Secret botox -30%</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="footer-simple">
+        <div class="footer-logo">
+            <img src="images/logo-footer.png" alt="GlossClinic">
+            <div class="footer-copyright">© 2025, GlossClinic made by me</div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-phone">8 888 888 88 88</div>
+            <div class="footer-email">GLOSSCLINIC@.COM</div>
+            <div class="footer-hours">График: Пн - Вс с 10:00 до 22:00</div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

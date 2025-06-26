@@ -1,0 +1,120 @@
+/* Общие стили для страниц авторизации */
+.auth-main {
+    min-height: calc(100vh - 70px);
+}
+
+
+.auth-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(158, 117, 117, 0.3);
+    border: 2px solid #d4b5aad4;
+}
+
+.auth-container h1 {
+    color: #9e7575;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+}
+
+.auth-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #d4b5aad4;
+}
+
+.auth-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d4b5aad4;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: italic;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #9e7575;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(158, 117, 117, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #9e7575;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #7a5d5d;
+    transform: translateY(-2px);
+}
+
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+.form-footer a {
+    color: #9e7575;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    
+    .auth-container h1 {
+        font-size: 1.8rem;
+    }
+}

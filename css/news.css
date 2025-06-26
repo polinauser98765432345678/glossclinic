@@ -1,0 +1,131 @@
+.news-main {
+    padding: 60px 0; /* Уменьшенный отступ */
+    background-color: #f9f9f9;
+}
+
+.clinic-news-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.clinic-news-header h1 {
+    font-style: italic;
+    font-weight: normal;
+    color: #333;
+    font-size: 36px;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin: 0 auto 10px;
+}
+
+.clinic-news-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+}
+
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news-feed {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.news-header h2 {
+    font-size: 20px;
+    color: #333;
+    margin-right: 15px;
+    flex: 1;
+    min-width: 60%;
+}
+
+.news-header time {
+    color: #9e7575;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.news-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #9e7575;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more-btn::after {
+    content: '→';
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover::after {
+    transform: translateX(3px);
+}
+
+@media (max-width: 767px) {
+    .news-main {
+        padding: 60px 0 40px;
+    }
+    
+    .clinic-news-header {
+        margin: -40px 0 20px 0;
+    }
+    
+    .clinic-news-header h1 {
+        font-size: 28px;
+    }
+    
+    .news-header {
+        flex-direction: column;
+    }
+    
+    .news-header h2 {
+        margin-bottom: 8px;
+    }
+    
+    .news-item {
+        padding: 20px;
+    }
+}
